@@ -1,5 +1,3 @@
-@jwt = {{jwt}}
-
 ###User Create
 POST http://localhost:3000/users.json
 Content-Type: application/json

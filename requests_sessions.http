@@ -1,8 +1,5 @@
-@jwt = {{jwt}}
-
 ###Sessions Create
 POST http://localhost:3000/sessions.json
-Authorization: Bearer {{jwt}}
 Content-Type: application/json
 
 {
