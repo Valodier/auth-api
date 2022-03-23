@@ -14,4 +14,9 @@ class UsersController < ApplicationController
       render json: {message: user.errors.full_messages}, status: :bad_request
     end
   end
+
+  def show
+    user = User.find_by(id:params["id"])
+    render json: {message: current_user}
+  end
 end

@@ -1,3 +1,5 @@
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NDgxMjc1NzB9.9Peure8VlVj1HjcK6lIU3fhYBH3tYH88r7G7triTvw0
+
 ###User Create
 POST http://localhost:3000/users.json
 Content-Type: application/json
@@ -8,3 +10,7 @@ Content-Type: application/json
   "password": "password",
   "password_confirmation": "password"
 }
+
+###User Show
+GET http://localhost:3000/users/1.json
+Authorization: Bearer {{jwt}}
